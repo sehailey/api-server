@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "a minimalist serverside template",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
+    "http-proxy-middleware": "^0.19.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.5.0",
+    "sequelize": "^4.39.1"
+  },
+  "scripts": {
+    "seed": "node db/seed.js",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://irc.anarchyplanet.org/git/notnull/server.git"
+  },
+  "author": "notnull",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://irc.anarchyplanet.org/git/notnull/server/issues"
+  },
+  "homepage": "irc.anarchyplanet.org"
+}

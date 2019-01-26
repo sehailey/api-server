@@ -1,0 +1,19 @@
+{
+  "extends": ["eslint:recommended"],
+
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+
+  "env": {
+    "es6": true,
+    "node": true
+  },
+
+  "rules": {
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "indent": ["warn", 2],
+    "no-unused-vars": ["warn"]
+  }
+}
