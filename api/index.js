@@ -2,10 +2,11 @@ const router = require('express').Router()
 module.exports = router
 
 router.use('/items', require('./items'))
+router.use('/articles', require('./articles'))
 
 router.get('/', async (req, res, next) => {
   try {
-    res.send('Hello from Express!')
+    res.send('/n-------/nHello from Express!/n--------/n')
   } catch (err) {
     next(err)
   }
