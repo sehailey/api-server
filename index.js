@@ -4,7 +4,7 @@ const app = express()
 const morgan = require('morgan')
 const ascii = require('./ascii')
 const port = process.env.PORT || 1337
-
+ALL YOUR BASE ARE BELONG TO US
 app.use(morgan('tiny'))
 
 // body parsing middleware
