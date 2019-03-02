@@ -3,11 +3,11 @@ const path = require('path')
 const app = express()
 const morgan = require('morgan')
 const ascii = require('./ascii')
+//const proxy = require('http-proxy-middleware')
 const port = process.env.PORT || 1337
-ALL YOUR BASE ARE BELONG TO US
+
 app.use(morgan('tiny'))
-YOU HAVE NO CHANCE TO SURVIVE MAKE YOUR TIME
-HA HA HA 
+
 // body parsing middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -16,24 +16,11 @@ app.use('/api', require('./api'))
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
-  app.use(express.static(path.join(__dirname, '..', 'client', 'build')))
+  app.use(express.static(path.join(__dirname, 'dist')))
 }
-
-
-// app.get('/articles', async (req, res, next) => {
-//     try {
-// 	const articles = await Article.findAll()
-// 	console.log(articles)
-
-// 	res.status(201).send(articles)
-//     } catch (err) {
-// 	next(err)
-//     }
-// })
-
-app.get('*', (req, res) =>
-  res.sendFile(path.resolve(__dirname, '..', 'client', 'public', 'index.html'))
-)
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'index.html'))
+})
 
 // error handling endware
 app.use((err, req, res, next) => {
