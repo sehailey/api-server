@@ -5,8 +5,8 @@ const ascii = String.raw`
 .         .                     .       .           .      .
         o                             .                   .
 .              .                  .           .
-          0   .                 anarchy
- .         .                 ,     planet         ,    ,
+          0   .
+ .         .                 ,                    ,    ,
 .           \         .                           .
    .  .      \   ,
  .            o     .                 .                   .

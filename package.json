@@ -15,16 +15,6 @@
   },
   "scripts": {
     "seed": "node db/seed.js",
-    "start": "nodemon server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://irc.anarchyplanet.org/git/notnull/server.git"
-  },
-  "author": "notnull",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://irc.anarchyplanet.org/git/notnull/server/issues"
-  },
-  "homepage": "irc.anarchyplanet.org"
+    "start": "nodemon index.js"
+  }
 }

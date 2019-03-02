@@ -1,14 +1,16 @@
 const router = require('express').Router()
+const path = require('path')
 module.exports = router
+const ascii = require('../ascii')
 
 router.use('/items', require('./items'))
-router.use('/articles', require('./articles'))
 
 router.get('/', async (req, res, next) => {
   try {
-    res.send('/n-------/nHello from Express!/n--------/n')
+    res.json({ ascii })
   } catch (err) {
-    next(err)
+    console.log(err)
+    next()
   }
 })
 
