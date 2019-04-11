@@ -10,8 +10,8 @@
     "http-proxy-middleware": "^0.19.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.9",
-    "pg": "^7.5.0",
-    "sequelize": "^4.39.1"
+    "pg": "^7.9.0",
+    "sequelize": "^5.3.1"
   },
   "scripts": {
     "seed": "node db/seed.js",
