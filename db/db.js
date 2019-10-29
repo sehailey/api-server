@@ -8,7 +8,6 @@ const createDB = () => {
     process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`,
     {
       logging: false,
-      operatorsAliases: false,
     }
   )
   return db
